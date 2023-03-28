@@ -1,0 +1,147 @@
+/* navbar  */
+#navbar {
+    background-color: rgb(255, 255, 255);
+    border-top: 4px solid $green;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px 0px 15px #d9d9d9;
+    z-index: 999999;
+    .row {
+        display: flex;
+    }
+}
+
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    max-height: max-content;
+    position: relative;
+    a {
+        background-color: rgba(0, 128, 0, 0);
+        color: $green;
+        padding: 10px 15px;
+        border-radius: 30px;
+        border: 2px solid $green;
+        transition: 0.4s;
+        font-weight: 400;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+            transition: 0.4s;
+            background-color: $green;
+            color: white;
+        }
+    }
+    .connexion {
+        margin-left: 15px;
+        text-decoration: none;
+        color: black;
+        border: 2px solid rgba(0, 0, 0, 0);
+        &:hover {
+            transition: 0.4s;
+            background-color: rgba(255, 255, 255, 0);
+            color: black;
+            /* border: 2px solid black; */
+            border-radius: 30px;
+        }
+    }
+}
+
+.header-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: max-content;
+    .col {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        a {
+            text-decoration: none;
+            text-align: center;
+            color: black;
+            border-bottom: 2px solid rgba(0, 0, 0, 0);
+            transition: 0, 3;
+            &:hover {
+                border-bottom: 2px solid $green;
+                transition: 0, 3;
+            }
+        }
+        svg {
+            transform: rotate(90deg);
+            text-align: center;
+            color: $green !important;
+        }
+    }
+}
+
+.header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    img {
+        height: 80px;
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+    h3 {
+        font-size: 1.3em;
+        margin-top: 20px;
+        font-family: "IBM Plex Sans", sans-serif;
+    }
+    e {
+        color: $green;
+    }
+    a {
+        flex-direction: row;
+        text-decoration: none;
+        display: flex;
+        color: black;
+    }
+}
+
+#header {
+    background-image: url("../img/lefam.jpg");
+    width: 100vw;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    min-height: 90vh;
+    h1 {
+        color: white;
+        font-size: 2.5em;
+        text-align: center;
+        text-shadow: 0px 0px 5px black;
+        width: 100%;
+    }
+    #center {
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            &::after {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 2px;
+                background: white;
+                height: 100%;
+                content: "";
+                top: 0px;
+            }
+            > div {
+                width: 50%;
+            }
+        }
+        margin: auto;
+        max-width: 1000px;
+    }
+}
