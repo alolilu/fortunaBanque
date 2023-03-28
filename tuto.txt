@@ -1,0 +1,17 @@
+virement : 
+
+on recupere la somme et le compte vers le quelle on transfert et on rajoutee l'argent vers le quelle on tranfert avec les ids de chaques compte 
+
+historique :
+
+base de donne avc tt les virements on sa prend les virements des comptes qui sont concerné 
+
+rechargement :
+
+RECHARGER SON COMPTE :
+ID UTILISATEUR (3 chiffres) - & - PREMIERE LETTRE PRENOM - SOMME (5 chiffres)
+EX:
+ID: 470
+PRENOM : PAUL
+SOMME : 12345
+=> 4 - 7 - 0 - & - P - 1 - 2 - 3 - 4 - 5
